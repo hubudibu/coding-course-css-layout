@@ -1,0 +1,55 @@
+/* RESET */
+body, h1, header {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: gold;
+  /* POSITIONING to top */
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* FLEXBOX to arrange menu items */
+  display: flex;
+  justify-content: space-around;
+}
+
+header a {
+  background-color: salmon;
+  padding: 0.5em;
+}
+
+.hamburger {
+  position: absolute;
+  right: 5px;
+  top: 4px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.💫 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/* GRID */
+.grid-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  grid-template-rows: 100px 100px;
+}
+
+.grid-container div {
+  background: seagreen;
+}
+
+.last {
+  grid-column-start: 4;
+}
